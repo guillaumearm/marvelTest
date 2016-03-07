@@ -1,4 +1,4 @@
-# TodoList
+# Marvel React Test
 
 ## How to install
 ```
