@@ -16,7 +16,7 @@ export const getFullImagePath = (path) => {
   return path + '?' + encodeURL({ts: getTimestamp(), apikey: api_public, hash: getHash()})
 }
 
-export const fetchCharacters = cb => {
+export const fetchHeroes = cb => {
   fetch(base_url
     + '/v1/public/characters?'
     + encodeURL({ts: getTimestamp(), apikey: api_public, hash: getHash()})
