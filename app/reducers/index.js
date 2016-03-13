@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
 
-const heroes = (state = [], action) => {
+const heroes = (state = { data: {} }, action) => {
   switch (action.type) {
     case 'HEROES_LOADED':
       return action.heroes
@@ -22,4 +23,5 @@ const selectedHero = (state = null, action) => {
 export default combineReducers({
 	heroes,
   selectedHero,
+  routing: routerReducer,
 })
